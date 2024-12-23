@@ -68,6 +68,8 @@ h1{
 }
 
 label {
+    display: block;
+    width: 300px;
     font-weight: bold;
     position: relative;
 }
@@ -80,13 +82,13 @@ label:hover {
     opacity: 1;
     position: absolute;
     right: 0;
-    top: -8px;
+    top: 10px;
 }
 .image1{
     opacity: 0;
     position: absolute;
     right: 0;
-    top: -10px;
+    top: 10px;
 }
 input[type="radio"]{
     appearance: none;
@@ -116,4 +118,18 @@ input[type="radio"]:checked + label + .image {
 }
 input[type="radio"]:checked + label + .image + .image1 {
     opacity: 1;
+}
+@media(max-width: 375px){
+    .accordion{
+        width: 300px;
+        padding: 20px;
+    }
+    .accordion-item{
+        width: 280px;
+        padding: 10px;
+    }
+    label{
+        width: 200px;
+    }
+
 }
